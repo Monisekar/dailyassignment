@@ -1,0 +1,29 @@
+//label[text()='Username']/following-sibling::input
+
+2.//input[@id='password']/preceding-sibling::label
+
+3.//button[normalize-space(text())='LOGIN']
+
+4.//button[contains(text(),'LOGIN')]
+
+5.//button[normalize-space(text())="SUBMIT"]
+
+6.//button[translate(text(), 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') = '  LOGIN  ']
+
+7)//button[contains(translate(text(), 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'), '   SUBMIT   ')]
+
+8)//span[contains(text(), 'Email verification is required.')]/following::input
+
+9)//label[(text()='Profile Email')]/preceding::h3
+
+10)//div[text()='Mobile Number']/following::input[@id='mobile']
+
+11)//button[text()='  REGISTER NOW  ']/ancestor::div/h2[text()='Registration Section']
+
+12)//div[contains(text(),'Registration')]/following-sibling::button
+
+13)//div[translate(normalize-space(text()), 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ') = 'USER NAME']
+
+14.//label[contains(text(), 'Email Address')] /following-sibling::input
+
+15.(//button[contains(translate(normalize-space(text()), 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'), 'LOGIN')])[1]
